@@ -1,0 +1,184 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Bar Styles */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8); /* Set your desired background color */
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    z-index: 9999;
+}
+
+.menu-btn {
+    font-size: 24px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+
+.menu li {
+    margin-bottom: 10px;
+}
+
+.menu a {
+    color: #333; /* Set your desired text color */
+    text-decoration: none;
+    display: block;
+    padding: 5px;
+}
+
+/* Slider Styles */
+.slider-container {
+    
+    margin-top: -10vh;
+    /* margin-bottom: -10vh; */
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/a1.jpeg);
+    background-color: #000; /* Set a background color for the slider container */
+}
+
+.slider {
+    
+    display: flex;
+    width: 300%;
+    height: 100%;
+    animation: slide 15s infinite;
+}
+
+.slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    resize: vertical;
+    
+    
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    33.33% {
+        transform: translateX(-100%);
+    }
+    66.66% {
+        transform: translateX(-200%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Media Queries for Responsive Design */
+
+/* For screens smaller than 576px (e.g., mobile phones) */
+@media (max-width: 575px) {
+    .navbar {
+        /* Adjust styles for the navigation bar on smaller screens */
+    }
+
+    .menu-btn {
+        /* Adjust styles for the menu button on smaller screens */
+    }
+
+    .menu {
+        /* Adjust styles for the menu on smaller screens */
+    }
+
+    .menu li {
+        /* Adjust styles for menu items on smaller screens */
+    }
+
+    .slider img {
+        /* Adjust styles for the slider images on smaller screens */
+        object-fit: cover; /* Ensure the image scales and retains aspect ratio */
+    }
+}
+
+/* For screens 576px and larger (e.g., tablets) */
+@media (min-width: 576px) {
+    .navbar {
+        /* Adjust styles for the navigation bar on larger screens */
+    }
+
+    .menu-btn {
+        /* Adjust styles for the menu button on larger screens */
+    }
+
+    .menu {
+        /* Adjust styles for the menu on larger screens */
+    }
+
+    .menu li {
+        /* Adjust styles for menu items on larger screens */
+    }
+
+    .slider img {
+        /* Adjust styles for the slider images on larger screens */
+        object-fit: cover; /* Ensure the image scales and retains aspect ratio */
+    }
+}
+
+/* For screens 768px and larger (e.g., small desktops) */
+@media (min-width: 768px) {
+    .navbar {
+        /* Adjust styles for the navigation bar on small desktops */
+    }
+
+    .menu-btn {
+        /* Adjust styles for the menu button on small desktops */
+    }
+
+    .menu {
+        /* Adjust styles for the menu on small desktops */
+    }
+
+    .menu li {
+        /* Adjust styles for menu items on small desktops */
+    }
+
+    .slider img {
+        /* Adjust styles for the slider images on small desktops */
+        object-fit: cover; /* Ensure the image scales and retains aspect ratio */
+    }
+}
+
+/* For screens 992px and larger (e.g., large desktops) */
+@media (min-width: 992px) {
+    .navbar {
+        /* Adjust styles for the navigation bar on large desktops */
+    }
+
+    .menu-btn {
+        /* Adjust styles for the menu button on large desktops */
+    }
+
+    .menu {
+        /* Adjust styles for the menu on large desktops */
+    }
+
+    .menu li {
+        /* Adjust styles for menu items on large desktops */
+    }
+
+    .slider img {
+        /* Adjust styles for the slider images on large desktops */
+        object-fit: cover; /* Ensure the image scales and retains aspect ratio */
+    }
+}
